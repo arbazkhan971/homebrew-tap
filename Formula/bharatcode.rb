@@ -5,21 +5,21 @@
 class Bharatcode < Formula
   desc "BharatCode — an open, sovereign terminal coding agent"
   homepage "https://github.com/arbazkhan971/bharatcode"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.2/bharatcode_Darwin_x86_64.tar.gz"
-      sha256 "a66f943ee11aa5d5ae5d9fd7bbacfde7b8d5727743da57efb69162b7f0f83e7b"
+      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.3/bharatcode_Darwin_x86_64.tar.gz"
+      sha256 "b4501ccaea0d42594a4e9614b17d67772d0951e165fb7680bc318a07f513bebb"
 
       define_method(:install) do
         bin.install "bharatcode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.2/bharatcode_Darwin_arm64.tar.gz"
-      sha256 "59460f8bcf7b8076919d15ba3a7d70e01d85c2e0c6195142e56991d309712fe7"
+      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.3/bharatcode_Darwin_arm64.tar.gz"
+      sha256 "af7ec552f9ad0fc1ef47859f864912d42e7ac4ea1c97fc7e3b3c34b7fd28de6d"
 
       define_method(:install) do
         bin.install "bharatcode"
@@ -29,15 +29,15 @@ class Bharatcode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.2/bharatcode_Linux_x86_64.tar.gz"
-      sha256 "d47ea41fa1e778b5791c82f199269d4d88253d6e91f6da57c2765e3a157f5a66"
+      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.3/bharatcode_Linux_x86_64.tar.gz"
+      sha256 "3ffeca3a56c6f4cedf8f2f6aa1fffc8ba314cff04414e9fa2a4280d72ec89119"
       define_method(:install) do
         bin.install "bharatcode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.2/bharatcode_Linux_arm64.tar.gz"
-      sha256 "6ea4a8eb03fe8e07bac259db258a55655862fa564868a2b3f355a19440c65698"
+      url "https://github.com/arbazkhan971/bharatcode/releases/download/v0.2.3/bharatcode_Linux_arm64.tar.gz"
+      sha256 "2c2bc69789b85ad20924bcceb62039da29682356567bfc2b6b72860dd39db4ea"
       define_method(:install) do
         bin.install "bharatcode"
       end
